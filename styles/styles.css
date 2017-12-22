@@ -1,0 +1,171 @@
+/*
+Make sure you import files in order (from top to bottom), based on what other files will need.
+
+For example, my variables file may need a font I imported, so typography is imported first...
+My mixins file probably needs a variable and possibly a font I imported, so my variables and typography files are imported before my mixins file...
+My globals file probably needs something from all three of the previously imported files, etc.
+*/
+/*!
+ * Web Fonts from Fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2017 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      Paulo Goode
+ * License URL: https://www.fontspring.com/licenses/paulogoode/webfont
+ *
+ *
+ */
+@font-face {
+  font-family: 'noe-display-bold';
+  src: url("assets/noe-display-bold.otf") format("otf");
+  font-weight: normal;
+  font-style: normal; }
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  /* Set to border-box to keep consistentcy across width/positioning adjustments */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: flex;
+  flex-flow: row wrap; }
+
+body {
+  /* Set to 62.5% so that 1rem = 10pt font */
+  background: #121527;
+  font-size: 13px;
+  font-weight: 200;
+  line-height: 20px;
+  font: inherent; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  color: #fff;
+  position: relative; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  width: 100%; }
+
+/* Use this to style your elements and build them in your elements.html file. When you're finished building and styling, you should be able to preview what they look and behave like, responsively. After that you can copy/paste the elements where you need them and all that needs to change is their positioning within the containing divs */
+.section-title {
+  font-family: 'noe-display-bold';
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 36px;
+  padding: 0 0 20px;
+  width: 100%; }
+
+.section-description {
+  padding: 0 0 20px;
+  width: 375px; }
+
+.section-list {
+  width: 375px; }
+  .section-list li {
+    padding: 0 0 13px; }
+  .section-list .social-link {
+    font-size: 10px;
+    font-weight: 900;
+    padding: 0 30px 0 0;
+    text-transform: uppercase; }
+
+.container {
+  color: #fff;
+  display: flex;
+  flex-flow: row wrap;
+  font-family: "Montserrat", sans-serif;
+  padding: 54px 100px; }
+
+section {
+  padding: 26px 0;
+  width: 100%; }
+
+.awards-image {
+  padding: 0 0 20px; }
+  .awards-image img {
+    height: 111px;
+    width: 310px; }
+
+#email {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase; }
+
+@media (max-width: 786px) {
+  /* Use this to style your elements and build them in your elements.html file. When you're finished building and styling, you should be able to preview what they look and behave like, responsively. After that you can copy/paste the elements where you need them and all that needs to change is their positioning within the containing divs */
+  .section-title {
+    font-size: 21px; }
+
+  .section-list {
+    width: 375px; }
+    .section-list .social-link {
+      padding: 0 15px 0 0; }
+
+  .container {
+    padding: 54px 30px; }
+
+  .awards-image img {
+    height: 89px;
+    width: 248px; } }
+
+/*# sourceMappingURL=styles.css.map */

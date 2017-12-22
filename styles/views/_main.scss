@@ -1,0 +1,29 @@
+.container {
+  color: $white;
+  display: flex;
+  flex-flow: row wrap;
+  font-family: $montserrat;
+  padding: 54px 100px;
+}
+
+section {
+  padding: 26px 0;
+  width: 100%;
+}
+
+.awards-image {
+  padding: 0 0 20px;
+
+  img {
+    height: 111px;
+    width: 310px;
+  }
+}
+
+#email {
+  font-family: $montserrat;
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}

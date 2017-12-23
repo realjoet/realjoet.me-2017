@@ -1,60 +1,21 @@
 /*
-Error: Invalid CSS after "'noe-display-bold'": expected expression (e.g. 1px, bold), was ";"
-        on line 32 of styles.css
+Make sure you import files in order (from top to bottom), based on what other files will need.
 
-27:  * License URL: https://www.fontspring.com/licenses/paulogoode/webfont
-28:  *
-29:  *
-30:  *\/
-31: @font-face {
-32:   font-family: 'noe-display-bold';
-33:   src: url("assets/noe-display-bold.otf") format("otf");
-34:   font-weight: normal;
-35:   font-style: normal; }
-36: /* http://meyerweb.com/eric/tools/css/reset/
-37:    v2.0 | 20110126
-
-Backtrace:
-styles.css:32
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/scss/parser.rb:1278:in `expected'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/script/lexer.rb:231:in `expected!'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/script/parser.rb:762:in `assert_done'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/script/parser.rb:69:in `parse'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/script/parser.rb:228:in `parse'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/script.rb:27:in `parse'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/engine.rb:1177:in `parse_script'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/engine.rb:749:in `parse_property'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/engine.rb:708:in `parse_property_or_rule'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/engine.rb:667:in `parse_line'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/engine.rb:540:in `build_tree'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/engine.rb:559:in `block in append_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/engine.rb:558:in `each'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/engine.rb:558:in `append_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/engine.rb:549:in `block in build_tree'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/engine.rb:542:in `each'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/engine.rb:542:in `build_tree'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/engine.rb:559:in `block in append_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/engine.rb:558:in `each'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/engine.rb:558:in `append_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/engine.rb:417:in `_to_tree'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+For example, my variables file may need a font I imported, so typography is imported first...
+My mixins file probably needs a variable and possibly a font I imported, so my variables and typography files are imported before my mixins file...
+My globals file probably needs something from all three of the previously imported files, etc.
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"'noe-display-bold'\": expected expression (e.g. 1px, bold), was \";\"\A         on line 32 of styles.css\A \A 27:  * License URL: https://www.fontspring.com/licenses/paulogoode/webfont\A 28:  *\A 29:  *\A 30:  */\A 31: @font-face {\A 32:   font-family: 'noe-display-bold';\A 33:   src: url(\"assets/noe-display-bold.otf\") format(\"otf\");\A 34:   font-weight: normal;\A 35:   font-style: normal; }\A 36: /* http://meyerweb.com/eric/tools/css/reset/\A 37:    v2.0 | 20110126"; }
+
+@import "base/typography";
+@import "base/variables";
+@import "base/mixins";
+@import "base/globals";
+@import "base/elements";
+@import "layout/header";
+@import "layout/footer";
+@import "views/main";
+
+@media (max-width: 786px) {
+  @import "mobile/elements";
+  @import "mobile/main";
+}

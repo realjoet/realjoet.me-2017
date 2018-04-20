@@ -29,8 +29,8 @@ My globals file probably needs something from all three of the previously import
  *
  */
 @font-face {
-  font-family: 'noe-display-bold';
-  src: url("assets/noe-display-bold.otf") format("otf");
+  font-family: 'noe-display';
+  src: url("assets/noe-display-bold.eot") format("eot"), url("assets/noe-display-bold.woff") format("woff"), url("assets/noe-display-bold.otf") format("otf");
   font-weight: normal;
   font-style: normal; }
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -106,7 +106,7 @@ a {
 
 /* Use this to style your elements and build them in your elements.html file. When you're finished building and styling, you should be able to preview what they look and behave like, responsively. After that you can copy/paste the elements where you need them and all that needs to change is their positioning within the containing divs */
 .section-title {
-  font-family: 'noe-display-bold', 'Playfair Display', serif;
+  font-family: 'noe-display', 'Playfair Display', serif;
   font-weight: 600;
   font-size: 34px;
   line-height: 36px;

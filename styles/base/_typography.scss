@@ -23,8 +23,10 @@
  */
 
 @font-face {
-    font-family: 'noe-display-bold';
-    src: url('assets/noe-display-bold.otf') format('otf');
+    font-family: 'noe-display';
+    src: url('assets/noe-display-bold.eot') format('eot'),
+         url('assets/noe-display-bold.woff') format('woff'),
+         url('assets/noe-display-bold.otf') format('otf');
     font-weight: normal;
     font-style: normal;
 }

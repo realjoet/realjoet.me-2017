@@ -1,6 +1,6 @@
 /* Use this to style your elements and build them in your elements.html file. When you're finished building and styling, you should be able to preview what they look and behave like, responsively. After that you can copy/paste the elements where you need them and all that needs to change is their positioning within the containing divs */
 .section-title {
-  font-family: 'noe-display', 'Playfair Display', serif;
+  font-family: 'noe-display', serif;
   font-weight: 600;
   font-size: 34px;
   line-height: 36px;
@@ -10,6 +10,7 @@
 
 .section-description {
   padding: 0 0 20px;
+  text-align: justify;
   width: 375px;
 }
 
@@ -21,7 +22,7 @@
   }
 
   .social-link{
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 900;
     padding: 0 30px 0 0;
     text-transform: uppercase;

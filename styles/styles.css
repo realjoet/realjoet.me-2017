@@ -68,10 +68,9 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   /* Set to 62.5% so that 1rem = 10pt font */
-  background: #121527;
   font-size: 14px;
   font-weight: 300;
-  line-height: 20px;
+  line-height: 21px;
   font: inherent; }
 
 ol, ul {
@@ -90,7 +89,6 @@ table {
   border-spacing: 0; }
 
 a {
-  color: #fff;
   position: relative; }
 
 .clearfix:after {
@@ -106,7 +104,6 @@ a {
 
 /* Use this to style your elements and build them in your elements.html file. When you're finished building and styling, you should be able to preview what they look and behave like, responsively. After that you can copy/paste the elements where you need them and all that needs to change is their positioning within the containing divs */
 .section-title {
-  font-family: 'noe-display', serif;
   font-weight: 600;
   font-size: 34px;
   line-height: 36px;
@@ -129,7 +126,7 @@ a {
     text-transform: uppercase; }
 
 .container {
-  color: #fff;
+  color: #292929;
   display: flex;
   flex-flow: row wrap;
   font-family: "Montserrat", sans-serif;

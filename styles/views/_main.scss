@@ -11,6 +11,20 @@ section {
   width: 100%;
 }
 
+.hero-image--container {
+  position: fixed;
+    top: 80px;
+    left: 600px;
+}
+
+.hero-image {
+  width: 500px;
+}
+
+.hero-image--description {
+  padding: 20px 0 0;
+}
+
 .awards-image {
   padding: 0 0 20px;
 

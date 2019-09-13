@@ -139,13 +139,21 @@ section {
 .hero-image--container {
   position: fixed;
   top: 80px;
-  left: 600px; }
-
-.hero-image {
+  left: 600px;
   width: 500px; }
 
-.hero-image--description {
-  padding: 20px 0 0; }
+.intro-video-container {
+  height: 0;
+  margin: 12px 0 0;
+  padding-bottom: 56.25%;
+  position: relative;
+  width: 100%; }
+  .intro-video-container iframe {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; }
 
 .awards-image {
   padding: 0 0 20px; }
@@ -179,13 +187,6 @@ section {
 
   .hero-image--container {
     position: inherit;
-    width: 375px; }
-
-  .hero-image {
-    width: 100%; }
-
-  .hero-image--description {
-    font-size: 11px;
-    padding: 8px 0 0; } }
+    width: 375px; } }
 
 /*# sourceMappingURL=styles.css.map */

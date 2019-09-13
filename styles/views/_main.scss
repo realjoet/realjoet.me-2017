@@ -15,14 +15,23 @@ section {
   position: fixed;
     top: 80px;
     left: 600px;
-}
-
-.hero-image {
   width: 500px;
 }
 
-.hero-image--description {
-  padding: 20px 0 0;
+.intro-video-container {
+  height: 0;
+  margin: 12px 0 0;
+  padding-bottom: 56.25%;
+  position: relative;
+  width: 100%;
+
+  iframe{
+    height: 100%;
+    position: absolute;
+      top:0;
+      left: 0;
+    width: 100%;
+  }
 }
 
 .awards-image {
